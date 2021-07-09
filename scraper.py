@@ -58,7 +58,7 @@ def run(start_year=None, year_ago=1):
         start_year -= 1
 
 
-"""if __name__ == '__main__':
+if __name__ == '__main__':
     try:
         start = int(sys.argv[1])
     except:
@@ -68,4 +68,3 @@ def run(start_year=None, year_ago=1):
     except:
         count = 1
     run(start_year=start, year_ago=count)
-"""

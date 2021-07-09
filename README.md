@@ -241,7 +241,6 @@ url = "http://9d44e5091b7d.ngrok.io"
 endpoint = f'{url}/box-office'
 r = requests.post(endpoint, json={})
 print(r.text)
-    
 ```
 
 ## Step 5 -> Making a ps1 script
@@ -249,6 +248,7 @@ It will help us to run command from anywhere like cmd, powershell etc
 
 <b>Make a file with ps1 extension</b>
 <strong>For Flask Server</strong>
+
 ```
 set FLASK_APP=flask_server.py
 $env:FLASK_APP = "flask_server.py"
@@ -256,6 +256,5 @@ flask run --host=127.0.0.1 --port=8000
 ```
 
 <strong>For FastAPI Server</strong>
-```
-uvicorn fast_server:app --port 8888
-```
+
+`uvicorn fast_server:app --port 8888`
